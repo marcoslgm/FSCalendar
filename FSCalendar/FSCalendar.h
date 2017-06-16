@@ -296,6 +296,15 @@ IB_DESIGNABLE
 @property (copy, nonatomic) NSLocale *locale;
 
 /**
+ * The timezone. Change it to display dates in the desired timezone.
+ *
+ * e.g. To display them in Europe/Madrid:
+ *
+ *    calendar.timezone = [NSTimeZone timeZoneWithName:@"Europe/Madrid"];
+ */
+ @property (copy, nonatomic) NSTimeZone *timeZone;
+
+/**
  * The scroll direction of FSCalendar. 
  *
  * e.g. To make the calendar scroll vertically
